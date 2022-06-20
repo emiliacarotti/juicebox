@@ -2,6 +2,12 @@
 /// it will also listen to the front-end code making AJAX requests to certain routes
 /// and make our own requests to the database
 
+require('dotenv').config();
+
+// remove this once you confirm it works
+// console.log(process.env.JWT_SECRET);
+// like, seriously. go delete that!
+
 const PORT = 3000;
 const express = require('express');
 const server = express();
